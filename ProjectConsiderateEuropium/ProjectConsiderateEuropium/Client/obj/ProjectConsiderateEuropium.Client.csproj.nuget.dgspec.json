@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj",
+        "projectName": "ProjectConsiderateEuropium.Client",
+        "projectPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj": {
+                "projectPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj",
+        "projectName": "ProjectConsiderateEuropium.Shared",
+        "projectPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
