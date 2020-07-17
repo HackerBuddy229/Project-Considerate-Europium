@@ -222,7 +222,6 @@ C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\Pr
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\LIfCYwg_PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\jqp6xS5jDFDsISGorhiYZQ2if3hAiols6d4C5BNnMQ4=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\45ia6XmGIa5WI3cHUIE9KhVornlZleYW_B5FPpfD1wQ=.hash
-C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\9jHyxntj43MVl72ilpha_ex7b6YKLQsHPrGourt1s-k=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\sifIvl02zqfSiv67ZRAsSa_NCvhMgTGrIUNuK8LmCNM=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\8Y81cOKaNJHZZvHu0TROikruBOenBHdE5WwI2BOkNNE=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\DG1MjidH81NA50uWH63eWmXLCxt18sJzoF2oXVlyvlY=.hash
@@ -238,13 +237,11 @@ C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\Pr
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\dwm_rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\fjjwv-KSdRNtgJ0K44n7Toi1BB7cPj3kctm-wP4mH78=.hash
-C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\SQs7qsnpiA6P8R3l0OU4G3HnasDAJsazq26W7VfVHoY=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\oU0moF6IIkna1pMoSD6Ze63s6aHfjCtUflz7xDmENPg=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\Rp2xCLzp2qPQ__Aqtx1B7VCnyYu0OUHTAXrWzkAw6WQ=.hash
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\ProjectConsiderateEuropium.Client.dll.gz
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
@@ -369,3 +366,6 @@ C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\Pr
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\staticwebassets\ProjectConsiderateEuropium.Client.StaticWebAssets.xml
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Client.dll
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Client.pdb
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\N_eTcinVL4xtcVcmU6j4MFaeaLxKrAXQAVhUghkSqso=.hash
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\ZynOjkboPml1XeV-cjE5pSe6hiAhRAfmAC-rO9p45KU=.hash
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Client\obj\Debug\netstandard2.1\integrity\RCsJcTGsyPr14UbRwfHo4-nbkvUH2VtND8R_tExySlE=.hash

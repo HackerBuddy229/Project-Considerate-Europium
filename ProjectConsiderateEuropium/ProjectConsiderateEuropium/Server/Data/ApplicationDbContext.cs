@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+using ProjectConsiderateEuropium.Shared.Models.Testing;
 
 namespace ProjectConsiderateEuropium.Server.Data
 {
@@ -12,7 +13,9 @@ namespace ProjectConsiderateEuropium.Server.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
-
+        
+        //Debug
+        public DbSet<DbTestItem> TestItems { get; set; }
 
         private IDbContextTransaction _transaction;
 
