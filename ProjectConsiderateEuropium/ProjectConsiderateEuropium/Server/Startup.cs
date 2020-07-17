@@ -5,6 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using ProjectConsiderateEuropium.Server.Data;
 
 namespace ProjectConsiderateEuropium.Server
 {
@@ -21,6 +24,12 @@ namespace ProjectConsiderateEuropium.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
+                options.UseInMemoryDatabase("InMemoryDb");
+                options.ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning));
+            });
+
 
             services.AddControllersWithViews();
             services.AddRazorPages();
