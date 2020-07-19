@@ -4,6 +4,6 @@ C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\Pr
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.csprojAssemblyReference.cache
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.AssemblyInfoInputs.cache
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.AssemblyInfo.cs
-C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.csproj.CoreCompileInputs.cache
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.dll
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.pdb
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Shared\obj\Debug\netstandard2.1\ProjectConsiderateEuropium.Shared.csproj.CoreCompileInputs.cache
