@@ -9,7 +9,7 @@ namespace ProjectConsiderateEuropium.Shared.Pagination
         public PageRequest(PageRequest<T> unsafeRequest) // creates a safe request from an unsafe request
         {
             AmountOfItems = unsafeRequest.AmountOfItems <= 25 ? unsafeRequest.AmountOfItems : 25;
-            PageNumber = unsafeRequest.PageNumber;
+            PageNumber = unsafeRequest.PageNumber >= 1 ? unsafeRequest.PageNumber : 1;
             Request = unsafeRequest.Request;
         }
 

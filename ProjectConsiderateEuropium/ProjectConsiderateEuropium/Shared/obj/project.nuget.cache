@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lUzW0BA4K6yrf0epYd1idsGM6qWzn8L/zgPaHSy2EXw0N9AWEiZTliOnbVQhFTboxbvd2m9QOiEUagLzJ+TX+Q==",
+  "dgSpecHash": "G/JTJSNTVsdPjbVKt4J57luJw+LD+vMhAkge1nyB/57+PnbphzJ+CY/3LZJsXCkt1nuERUo5LW+TLo97k8pnyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rasmus\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

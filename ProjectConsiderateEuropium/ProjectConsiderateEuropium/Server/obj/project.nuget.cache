@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YvPbkyUH1ydVAxWkMp+ba2XKaicG27FknZL46aCHvFPe1qoQqLVrXH3WyTxDutz7i3/+16Dj5q9xnMtnDcHSxw==",
+  "dgSpecHash": "TmcnZiR5Wo0CRKiIhjh/yS4fBK5CeZ4zjOb0MGVLTHNcfM9qjad+Kzl/mkdx4iwLIPisL29P1NXVnXVQV6xdCA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\ProjectConsiderateEuropium.Server.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\Rasmus\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
     "C:\\Users\\Rasmus\\.nuget\\packages\\microsoft.jsinterop\\3.1.3\\microsoft.jsinterop.3.1.3.nupkg.sha512",
     "C:\\Users\\Rasmus\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0\\microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512",
+    "C:\\Users\\Rasmus\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Rasmus\\.nuget\\packages\\system.net.http.json\\3.2.0\\system.net.http.json.3.2.0.nupkg.sha512",
     "C:\\Users\\Rasmus\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
   ],
