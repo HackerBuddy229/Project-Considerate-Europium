@@ -9,6 +9,7 @@ namespace ProjectConsiderateEuropium.Shared.Models
     {
         [Key]
         public string Id { get; set; }
+        public string CreatedAt { get; set; }
 
         //img url
         public string Logo { get; set; }
