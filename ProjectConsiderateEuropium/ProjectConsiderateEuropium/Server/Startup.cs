@@ -5,10 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using ProjectConsiderateEuropium.Server.Controllers;
 using ProjectConsiderateEuropium.Server.Data;
+using ProjectConsiderateEuropium.Server.services;
+using ProjectConsiderateEuropium.Server.services.AlternativeProduct;
 
 namespace ProjectConsiderateEuropium.Server
 {
@@ -35,7 +38,19 @@ namespace ProjectConsiderateEuropium.Server
             
             
             //dependency injection
+            services.AddHttpContextAccessor();
+            services.AddSingleton<IUriService>(o =>
+            {
+                var accessor = o.GetRequiredService<IHttpContextAccessor>();
+                var request = accessor.HttpContext.Request;
+                var uri = string.Concat(request.Scheme, "://", request.Host.ToUriComponent());
+                return new UriService(uri);
+            });
+
             services.AddScoped<EFCoreTestingService>();
+
+            services.AddScoped<IAlternativeService, AlternativeService>();
+            services.AddScoped<IAlternativeGetterService, AlternativeGetterService>();
 
             //base
             services.AddControllersWithViews();

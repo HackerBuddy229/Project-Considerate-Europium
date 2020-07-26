@@ -6,10 +6,10 @@ using System.Text;
 
 namespace ProjectConsiderateEuropium.Shared.Models
 {
-    public class Alternative
+    public class Product
     {
-        [Key]
-        public string Id { get; set; }
+        [Key] public string Id { get; set; } = Guid.NewGuid().ToString();
+
         public string CreatedAt { get; set; } = DateTime.UtcNow.ToString(CultureInfo.InvariantCulture);
 
         //img url
@@ -30,5 +30,6 @@ namespace ProjectConsiderateEuropium.Shared.Models
 
         public string Jurisdiction { get; set; }
 
+        public string Alternatives { get; set; }
     }
 }

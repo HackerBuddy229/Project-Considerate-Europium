@@ -20,6 +20,7 @@ namespace ProjectConsiderateEuropium.Server.Data
 
         //mvp
         public DbSet<Alternative> Alternatives { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         private IDbContextTransaction _transaction;
 
