@@ -1,15 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using ProjectConsiderateEuropium.Server.Controllers;
 using ProjectConsiderateEuropium.Server.Data;
+using ProjectConsiderateEuropium.Server.Data.Models;
 using ProjectConsiderateEuropium.Server.services;
 using ProjectConsiderateEuropium.Server.services.AlternativeProduct;
 
@@ -35,6 +34,18 @@ namespace ProjectConsiderateEuropium.Server
                 options.UseInMemoryDatabase("InMemoryDb");
                 options.ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning));
             });
+
+
+            services.AddIdentityCore<ApplicationIdentityUser>(o =>
+                {
+                    o.Password.RequireDigit = false;
+                    o.Password.RequireNonAlphanumeric = false;
+                    o.Password.RequireUppercase = false;
+                    o.Password.RequiredLength = 4;
+
+                    o.User.RequireUniqueEmail = true;
+                })
+                .AddEntityFrameworkStores<ApplicationDbContext>();
             
             
             //dependency injection
