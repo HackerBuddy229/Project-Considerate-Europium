@@ -18,6 +18,7 @@ namespace ProjectConsiderateEuropium.Server.Authentication.Services
     public interface ITokenCreationService
     {
         TokenSet CreateTokenSet(ApplicationIdentityUser user, bool keepMeLoggedIn = false);
+        TokenResponse CreateToken(ApplicationIdentityUser user, TokenType tokenType);
     }
 
     public class TokenCreationService : ITokenCreationService

@@ -235,7 +235,12 @@ C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\Pr
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\obj\Debug\netcoreapp3.1\ProjectConsiderateEuropium.Server.csproj.CoreCompileInputs.cache
-C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\obj\Debug\netcoreapp3.1\ProjectConsiderateEuropium.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\obj\Debug\netcoreapp3.1\ProjectConsiderateEuropium.Server.csproj.CoreCompileInputs.cache
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\obj\Debug\netcoreapp3.1\ProjectConsiderateEuropium.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rasmus\repos\Project-Considerate-Europium\ProjectConsiderateEuropium\ProjectConsiderateEuropium\Server\obj\Debug\netcoreapp3.1\ProjectConsiderateEuropium.Server.MvcApplicationPartsAssemblyInfo.cache

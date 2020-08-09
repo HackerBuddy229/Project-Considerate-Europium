@@ -22,11 +22,14 @@ namespace ProjectConsiderateEuropium.Server.services.ZeroProduct
     {
         private readonly IProductGetterService _productGetterService;
         private readonly ApplicationDbContext _dbContext;
+        private readonly IProductCreationService _productCreationService;
 
-        public ProductService(IProductGetterService productGetterService, ApplicationDbContext dbContext)
+        public ProductService(IProductGetterService productGetterService, ApplicationDbContext dbContext,
+            IProductCreationService productCreationService)
         {
             _productGetterService = productGetterService;
             _dbContext = dbContext;
+            _productCreationService = productCreationService;
         }
 
 
@@ -54,21 +57,7 @@ namespace ProjectConsiderateEuropium.Server.services.ZeroProduct
 
         public CreationResult<Product> CreateProduct(Product product)
         {
-            _dbContext.BeginTransaction();
-
-            _dbContext.Products.Add(product);
-
-            try
-            {
-                _dbContext.Commit();
-            }
-            catch (Exception ex)
-            {
-                _dbContext.Rollback();
-                return new CreationResult<Product>(){Errors = new List<string>(){$"Db Error: {ex.Message}"}};
-            }
-
-            return new CreationResult<Product>(){Created = product};
+            return _productCreationService.CreateProduct(product);
         }
     }
 }

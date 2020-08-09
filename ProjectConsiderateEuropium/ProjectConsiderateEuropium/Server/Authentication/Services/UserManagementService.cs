@@ -14,6 +14,9 @@ namespace ProjectConsiderateEuropium.Server.Authentication.Services
 
         Task<bool> VerifyUserCredentials(ApplicationIdentityUser user, string password);
         Task<bool> VerifyUserCredentials(string email, string password);
+
+        Task ResetTokenGeneration(ApplicationIdentityUser user);
+        Task ResetTokenGeneration(string email);
     }
 
     public class UserManagementService : IUserManagementService
@@ -50,6 +53,27 @@ namespace ProjectConsiderateEuropium.Server.Authentication.Services
 
             var result = await VerifyUserCredentials(user, password);
             return result;
+        }
+
+        public async Task ResetTokenGeneration(ApplicationIdentityUser user)
+        {
+            user.RefreshTokenGeneration = Guid.NewGuid().ToString();
+            await UpdateUser(user);
+        }
+
+        public async Task ResetTokenGeneration(string email)
+        {
+            var user = await GetUserByEmail(email);
+            if (user == null)
+                return;
+
+            user.RefreshTokenGeneration = Guid.NewGuid().ToString();
+            await UpdateUser(user);
+        }
+
+        private async Task UpdateUser(ApplicationIdentityUser user)
+        {
+            await _userManager.UpdateAsync(user);
         }
 
         private async Task<bool> UserPasswordIsValid(ApplicationIdentityUser user, string password)

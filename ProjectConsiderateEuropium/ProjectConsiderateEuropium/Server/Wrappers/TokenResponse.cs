@@ -10,6 +10,6 @@ namespace ProjectConsiderateEuropium.Server.Wrappers
         public string TokenCreated { get; set; }
 
         public IEnumerable<string> Errors { get; set; } = new List<string>();
-        public bool Succeeded => Errors.Any();
+        public bool Succeeded => !string.IsNullOrWhiteSpace(TokenCreated);
     }
 }

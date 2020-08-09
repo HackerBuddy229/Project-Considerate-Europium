@@ -14,6 +14,7 @@ namespace ProjectConsiderateEuropium.Shared.Models
 
         //img url
         public string Logo { get; set; }
+        public string AccentColor { get; set; }
 
         //name
         public string Designation { get; set; }

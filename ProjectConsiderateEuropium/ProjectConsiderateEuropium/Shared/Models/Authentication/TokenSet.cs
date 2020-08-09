@@ -6,8 +6,8 @@ namespace ProjectConsiderateEuropium.Shared.Models.Authentication
 {
     public class TokenSet
     {
-        public AuthenticationToken AuthenticationToken { get; set; }
+        public AuthenticationToken AuthenticationToken { get; set; } = new AuthenticationToken();
 
-        public RefreshToken RefreshToken { get; set; }
+        public RefreshToken RefreshToken { get; set; } = new RefreshToken();
     }
 }
