@@ -3,6 +3,7 @@ using ProjectConsiderateEuropium.Server.Wrappers;
 using ProjectConsiderateEuropium.Shared.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.Serialization.Formatters;
 using System.Threading.Tasks;
@@ -27,6 +28,9 @@ namespace ProjectConsiderateEuropium.Server.services.ZeroProduct
         {
             if (!IsValidProduct(product))
                 return new CreationResult<Product> { Errors = new List<string> { "Not a valid product" } };
+
+            product.Id = Guid.NewGuid().ToString();
+            product.CreatedAt = DateTime.Now.ToString(CultureInfo.InvariantCulture);
 
             _dbContext.BeginTransaction();
 

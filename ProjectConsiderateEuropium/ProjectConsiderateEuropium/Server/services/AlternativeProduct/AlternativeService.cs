@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using ProjectConsiderateEuropium.Server.Data;
+using ProjectConsiderateEuropium.Server.handlers;
 using ProjectConsiderateEuropium.Server.Wrappers;
+using ProjectConsiderateEuropium.Shared.Communication;
 using ProjectConsiderateEuropium.Shared.Filter;
 using ProjectConsiderateEuropium.Shared.Models;
 using ProjectConsiderateEuropium.Shared.Models.ModelTypes;
@@ -18,19 +21,25 @@ namespace ProjectConsiderateEuropium.Server.services.AlternativeProduct
         IEnumerable<Alternative> GetNewestAlternatives(int amount);
         IEnumerable<Alternative> GetOldestAlternatives(int amount);
         PagedResponse<IEnumerable<Alternative>> GetPagedAlternativesByNewest(PaginationFilter filter, string route);
-        CreationResult<Alternative> CreateAlternative(Alternative alternative); //debug
+        CreationResult<Alternative> CreateAlternative(UserEntityCreationRequest<Alternative> alternative);
     }
 
     public class AlternativeService : IAlternativeService
     {
         private readonly IAlternativeGetterService _alternativeGetterService;
         private readonly ApplicationDbContext _dbContext;
+        private readonly IAlternativeCreationService _alternativeCreationService;
+        private readonly IUserImageHandler _userImageHandler;
 
-        public AlternativeService(IAlternativeGetterService alternativeGetterService, 
-            ApplicationDbContext dbContext)
+        public AlternativeService(IAlternativeGetterService alternativeGetterService,
+            IAlternativeCreationService alternativeCreationService,
+            ApplicationDbContext dbContext,
+            IUserImageHandler userImageHandler)
         {
             _alternativeGetterService = alternativeGetterService;
             _dbContext = dbContext;
+            _alternativeCreationService = alternativeCreationService;
+            _userImageHandler = userImageHandler;
         }
 
         public Alternative GetAlternative(string identifier, IdentificationType identificationType)
@@ -65,26 +74,39 @@ namespace ProjectConsiderateEuropium.Server.services.AlternativeProduct
             return _alternativeGetterService.GetPagedAlternativesByDescendingCreated(filter, route);
         }
 
-        public CreationResult<Alternative> CreateAlternative(Alternative alternative)
+        public CreationResult<Alternative> CreateAlternative(UserEntityCreationRequest<Alternative> alternative)
         {
-            if (alternative == null)
-                return new CreationResult<Alternative>(){Errors = new List<string>(){"null input"}};
+            //verify file
+            if (!_userImageHandler.ValidateImage(alternative.Image))
+                return new CreationResult<Alternative>{Errors = new List<string>{"Invalid Image"}};
 
-            _dbContext.BeginTransaction();
+            //get path
+            alternative.Image = _userImageHandler.CreateUserImagePath(alternative.Image);
+            alternative.NewEntity.Logo = alternative.Image.Path;
 
-            _dbContext.Alternatives.Add(alternative);
 
+            //create product
+            var result = _alternativeCreationService.CreateAlternative(alternative.NewEntity);
+
+            //verify Entry
+            if (!result.Succeeded)
+                return new CreationResult<Alternative>{Errors = new List<string>{"bad product"}};
+
+            //write Image
             try
             {
-                _dbContext.Commit();
+                _userImageHandler.WriteImage(alternative.Image);
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                _dbContext.Rollback();
-                return new CreationResult<Alternative>(){Errors = new List<string>(){$"dbError: {ex.Message}"}};
+                _dbContext.Alternatives.Remove(result.Created);
+                _dbContext.SaveChanges();
+
+                return new CreationResult<Alternative>{Errors = new List<string>{$"Error writing Image {ex.Message}"}};
             }
 
-            return new CreationResult<Alternative>(){Created = alternative};
+            //return result
+            return new CreationResult<Alternative>{Created = result.Created};
         }
     }
 }

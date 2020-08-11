@@ -15,6 +15,7 @@ using ProjectConsiderateEuropium.Server.Controllers;
 using ProjectConsiderateEuropium.Server.Data;
 using ProjectConsiderateEuropium.Server.Data.Models;
 using ProjectConsiderateEuropium.Server.External;
+using ProjectConsiderateEuropium.Server.handlers;
 using ProjectConsiderateEuropium.Server.services;
 using ProjectConsiderateEuropium.Server.services.AlternativeProduct;
 using ProjectConsiderateEuropium.Server.services.ApplicationUser;
@@ -99,6 +100,9 @@ namespace ProjectConsiderateEuropium.Server
             services.AddScoped<IProductGetterService, ProductGetterService>();
             services.AddScoped<IProductCreationService, ProductCreationService>();
             services.AddScoped<IProductService, ProductService>();
+
+            //storage services
+            services.AddScoped<IUserImageHandler, UserImageHandler>();
 
             //identityServices
             services.AddScoped<IUserManagementService, UserManagementService>();

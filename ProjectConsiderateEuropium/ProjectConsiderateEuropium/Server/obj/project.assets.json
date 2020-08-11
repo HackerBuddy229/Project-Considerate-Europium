@@ -1801,6 +1801,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "1.1.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
