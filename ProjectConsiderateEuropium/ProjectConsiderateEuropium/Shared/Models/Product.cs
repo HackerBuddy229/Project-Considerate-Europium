@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Globalization;
 using System.Text;
 
@@ -31,6 +32,9 @@ namespace ProjectConsiderateEuropium.Shared.Models
 
         public string Jurisdiction { get; set; }
 
-        public string Alternatives { get; set; }
+        public string AlternativeIds { get; set; }
+
+        [NotMapped]
+        public IEnumerable<Alternative> Alternatives { get; set; }
     }
 }

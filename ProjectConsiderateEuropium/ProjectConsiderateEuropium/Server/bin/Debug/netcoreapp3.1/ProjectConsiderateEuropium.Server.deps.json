@@ -1631,6 +1631,7 @@
       },
       "ProjectConsiderateEuropium.Shared/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {

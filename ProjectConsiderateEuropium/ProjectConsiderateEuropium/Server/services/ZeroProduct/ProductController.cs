@@ -31,11 +31,7 @@ namespace ProjectConsiderateEuropium.Server.services.ZeroProduct
         [HttpPost]
         public IActionResult CreateProduct([FromBody] Product product)
         {
-            var result = _productService.CreateProduct(product);
-            if (!result.Succeeded)
-                return BadRequest();
-
-            return Ok(result.Created);
+            return Ok("not implemented");
         }
 
         [HttpGet("paged/newest")]

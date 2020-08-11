@@ -35,12 +35,7 @@ namespace ProjectConsiderateEuropium.Server.services.AlternativeProduct
         [HttpPost]
         public IActionResult CreateAlternative([FromBody] Alternative alternative)
         {
-            var result = _alternativeService.CreateAlternative(alternative);
-
-            if (!result.Succeeded)
-                return BadRequest(result.Errors);
-
-            return Ok(result.Created);
+            return Ok("not working");
         }
 
         //[HttpGet("paged/newest")]

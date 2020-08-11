@@ -6212,25 +6212,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rasmus\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Rasmus Bengtsson\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\ProjectConsiderateEuropium.Server.csproj",
+      "projectUniqueName": "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\ProjectConsiderateEuropium.Server.csproj",
       "projectName": "ProjectConsiderateEuropium.Server",
-      "projectPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\ProjectConsiderateEuropium.Server.csproj",
-      "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\obj\\",
+      "projectPath": "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\ProjectConsiderateEuropium.Server.csproj",
+      "packagesPath": "C:\\Users\\Rasmus Bengtsson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Rasmus Bengtsson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6242,11 +6237,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj": {
-              "projectPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj"
+            "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj": {
+              "projectPath": "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Client\\ProjectConsiderateEuropium.Client.csproj"
             },
-            "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj": {
-              "projectPath": "C:\\Users\\Rasmus\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj"
+            "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj": {
+              "projectPath": "C:\\Users\\Rasmus Bengtsson\\repos\\Project-Considerate-Europium\\ProjectConsiderateEuropium\\ProjectConsiderateEuropium\\Shared\\ProjectConsiderateEuropium.Shared.csproj"
             }
           }
         }
@@ -6313,7 +6308,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

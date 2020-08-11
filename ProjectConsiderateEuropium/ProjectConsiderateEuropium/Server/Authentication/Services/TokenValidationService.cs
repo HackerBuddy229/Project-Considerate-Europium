@@ -64,7 +64,7 @@ namespace ProjectConsiderateEuropium.Server.Authentication.Services
 
                 return generationClaim != null && generationClaim.Value == user.RefreshTokenGeneration;
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }

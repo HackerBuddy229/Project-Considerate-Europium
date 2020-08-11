@@ -21,6 +21,8 @@ namespace ProjectConsiderateEuropium.Server.services.AlternativeProduct
         IEnumerable<Alternative> GetAlternativesByAscendingCreated(int amount);
         PagedResponse<IEnumerable<Alternative>> GetPagedAlternativesByDescendingCreated(PaginationFilter filter, string route);
 
+        Product PopulateProduct(Product product);
+
     }
 
     public class AlternativeGetterService : IAlternativeGetterService
@@ -81,6 +83,22 @@ namespace ProjectConsiderateEuropium.Server.services.AlternativeProduct
             var pagedResponse = PaginationHelper.CreatePagedResponse<Alternative>(
                 pagedData, validFilter, totalRecords, _uriService, route);
             return pagedResponse;
+        }
+
+        public Product PopulateProduct(Product product)
+        {
+            var alternativeIds = product.AlternativeIds.Split(",");
+            if (string.IsNullOrWhiteSpace(product.AlternativeIds) || !alternativeIds.Any())
+                return product;
+
+            var alternatives = 
+                alternativeIds.Where(x => !string.IsNullOrWhiteSpace(x))
+                    .Select(alternative => _dbContext.Alternatives.FirstOrDefault(a => a.Id == alternative))
+                    .Where(alt => alt != null)
+                    .ToList();
+
+            product.Alternatives = alternatives;
+            return product;
         }
 
         public Alternative GetAlternativeById(string id)
